@@ -403,7 +403,7 @@ class Commands : Object
         return false;
     }
 
-    public void signalHandler( GLib.DBusConnection conn, string sender, string path, string iface, string name, Variant params )
+    public void signalHandler( GLib.DBusConnection conn, string? sender, string path, string iface, string name, Variant params )
     {
         var line = "[SIGNAL] %s.%s  %s  %s\n%s".printf(
           iface,
