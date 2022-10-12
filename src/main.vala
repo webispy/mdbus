@@ -674,7 +674,7 @@ class Commands : Object
         Readline.terminal_name = Environment.get_variable( "TERM" );
 
         Readline.History.read( "%s/.mdbus2.history".printf( Environment.get_variable( "HOME" ) ) );
-        Readline.History.max_entries = 512;
+        // Readline.History.max_entries = 512;
 
         Readline.completion_entry_function = completion;
         //Readline.completion_word_break_hook = wordBreakCharacters;
@@ -682,9 +682,9 @@ class Commands : Object
         Readline.parse_and_bind( "tab: complete" );
 
         Readline.completer_word_break_characters = " ";
-        Readline.basic_quote_characters = " ";
+        // Readline.basic_quote_characters = " ";
         Readline.completer_word_break_characters = " ";
-        Readline.filename_quote_characters = " ";
+        // Readline.filename_quote_characters = " ";
 
         var done = false;
 
